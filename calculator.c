@@ -53,7 +53,16 @@ int main() {
 		}
 
 		else if (opr == 4) {
-			printf("Division\n");
+			int num1;
+			printf("Enter first number:");
+			scanf("%d", &num1);
+
+			int num2;
+			printf("Enter second number:");
+			scanf("%d", &num2);
+
+			int result = num1 / num2;
+			printf("\nResult => %d\n\n", result);
 		}
 
 		else if (opr == 5) {
