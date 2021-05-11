@@ -14,7 +14,16 @@ int main() {
 		scanf("%d", &opr);
 
 		if (opr == 1) {
-			printf("Addition\n");
+			int num1;
+			printf("Enter first number:");
+			scanf("%d", &num1);
+
+			int num2;
+			printf("Enter second number:");
+			scanf("%d", &num2);
+
+			int result = num1 + num2;
+			printf("\nResult => %d\n", result);
 		}
 
 		else if (opr == 2) {
