@@ -36,11 +36,20 @@ int main() {
 			scanf("%d", &num2);
 
 			int result = num1 - num2;
-			printf("\n Result => %d\n\n", result);
+			printf("\nResult => %d\n\n", result);
 		}
 
 		else if (opr == 3) {
-			printf("Multiplication\n");
+			int num1;
+			printf("Enter first number:");
+			scanf("%d", &num1);
+			
+			int num2;
+			printf("Enter second number:");
+			scanf("%d", &num2);
+
+			int result = num1 * num2;
+			printf("\nRresult => %d\n\n", result);
 		}
 
 		else if (opr == 4) {
