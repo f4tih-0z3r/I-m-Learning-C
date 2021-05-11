@@ -23,7 +23,7 @@ int main() {
 			scanf("%d", &num2);
 
 			int result = num1 + num2;
-			printf("\nResult => %d\n", result);
+			printf("\nResult => %d\n\n", result);
 		}
 
 		else if (opr == 2) {
