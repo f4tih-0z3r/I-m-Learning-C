@@ -9,6 +9,12 @@ int main() {
 		while (clock() < startTime + milliSeconds) {}
 	}
 
+	void swap(int *a, int *b) {
+		int temp = *a;
+		*a = *b;
+		*b = temp;
+	}
+
 	printf("Hello World!\n");
 	delay(1000);
 
@@ -27,6 +33,19 @@ int main() {
 
 	printf("Fuck you %d times %s\n", age, name);
 	delay(1000);
+
+	int x;
+	printf("Enter a number for x: ");
+	scanf("%d", &x);
+
+	int y;
+	printf("Enter a number for y: ");
+	scanf("%d", &y);
+
+	swap(&x, &y);
+
+	printf("Now x: %d, y: %d\n", x, y);
+	printf("And fuck you %s\n", name);
 	
 	return 0;
 }
