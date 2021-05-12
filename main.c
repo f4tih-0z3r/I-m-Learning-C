@@ -45,6 +45,7 @@ int main() {
 	swap(&x, &y);
 
 	printf("Now x: %d, y: %d\n", x, y);
+	delay(1000);
 	printf("And fuck you %s\n", name);
 	
 	return 0;
