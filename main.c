@@ -39,7 +39,8 @@ int main() {
 	printf("Whats your name: ");
 	scanf("%s", name);
 
-	printf("Fuck you %s\n", name);delay(1000);
+	printf("Fuck you %s\n", name);
+	delay(1000);
 
 	int age;
 
