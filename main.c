@@ -7,7 +7,15 @@
 #define BLUE	"\x1b[34m"
 #define MAGENTA	"\x1b[35m"
 #define CYAN	"\x1b[36m"
-#define RESET	"\x1b[0m"
+
+#define BOLD_RED	 "\x1b[1m\x1b[31m"
+#define BOLD_GREEN	 "\x1b[1m\x1b[32m"
+#define BOLD_YELLOW  "\x1b[1m\x1b[33m"
+#define BOLD_BLUE	 "\x1b[1m\x1b[34m"
+#define BOLD_MAGENTA "\x1b[1m\x1b[35m"
+#define BOLD_CYAN	 "\x1b[1m\x1b[36m"
+
+#define RESET "\x1b[0m"
 
 int main() {
 	void delay(int milliSeconds) {
@@ -62,7 +70,7 @@ int main() {
 	printf(MAGENTA "I'm MAGENTA" RESET "\n");
 	printf(CYAN "I'm CYAN" RESET "\n");
 
-	printf(RED "I" GREEN "'" YELLOW "m" BLUE " G" MAGENTA "A" CYAN "Y" RESET "\n");
+	printf(BOLD_RED "I" BOLD_GREEN "'" BOLD_YELLOW "m" BOLD_BLUE " G" BOLD_MAGENTA "A" BOLD_CYAN "Y" RESET "\n");
 	
 	return 0;
 }
